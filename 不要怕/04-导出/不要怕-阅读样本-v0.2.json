@@ -1,0 +1,42 @@
+{
+  "output": "不要怕/04-导出/不要怕-阅读样本-v0.2.pdf",
+  "mode": "preview",
+  "source_revision": null,
+  "base_revision": "606e829afec2bd17a92132bca0ab2834627fd3a9",
+  "inputs": {
+    "不要怕/specs/reading-edition.json": "0f24aa52b63107e29d181d94004a5aef83c82592f8eccc2db61384c11022cfba",
+    "不要怕/00-全书规划/全书目录.md": "2a7824fd6a2479ad3525609214030c36a6fafa34fd9e12cf6c2891386164c0e3",
+    "不要怕/02-正文/为什么要把这些写下来.md": "6841e92743dfeda94bf5057afb4bbf8fd8f739de661123f04fdde2befe322e41",
+    "不要怕/03-附件/封面/不要怕-封面-v0.3.png": "c578ab19d37c0a28aebb026ab846854afbabb3bcf83d46dc8a454bc41744cac1"
+  },
+  "renderer_sha256": "b260b8d02558442e304fd5c097cda50dafe987e766206bd84421f07ef4e5716f",
+  "pdf_sha256": "cf829235c6c70af9b4270d2646691ff1c99ea6ec84df7bdf1cc7a8dc2ffa1b71",
+  "pages": 5,
+  "chapters": [
+    {
+      "title": "为什么要把这些写下来",
+      "path": "不要怕/02-正文/为什么要把这些写下来.md",
+      "page": 1
+    }
+  ],
+  "checks": {
+    "text_blocks_checked": 13,
+    "full_text": "passed",
+    "page_bounds": "passed",
+    "navigation": "passed"
+  },
+  "visual_review": {
+    "status": "passed",
+    "scope": "layout-only",
+    "date": "2026-11-11",
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "pdf_sha256": "cf829235c6c70af9b4270d2646691ff1c99ea6ec84df7bdf1cc7a8dc2ffa1b71",
+    "notes": "已逐页查看最终 5 页渲染图：封面、扉页、目录、两页正文、页码和新闻章末注完整，未见裁切、重叠或缺字。此项仅验收排版，不提升章节成熟度。"
+  }
+}
