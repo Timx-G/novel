@@ -1,0 +1,9 @@
+{
+  "showInlineTitle": false,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "02-正文",
+  "attachmentFolderPath": "03-附件",
+  "newLinkFormat": "relative",
+  "useMarkdownLinks": true,
+  "alwaysUpdateLinks": true
+}

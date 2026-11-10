@@ -1,0 +1,6 @@
+interface:
+  display_name: "人生故事与随笔成书"
+  short_description: "整理零散想法和真实经历，保留作者原意与口吻，逐篇完善并编排成书"
+  default_prompt: "请使用 $life-writing，依据本书已有约定和我提供的素材，协助整理、起草、润色或编排；保留原意与口吻，默认不虚构。"
+policy:
+  allow_implicit_invocation: true
