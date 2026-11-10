@@ -1,0 +1,28 @@
+#!/bin/sh
+set -eu
+root=$(git rev-parse --show-toplevel)
+branch=$(git symbolic-ref --quiet --short HEAD || true)
+[ "$branch" = main ] || exit 0
+event=${1:-manual}
+if [ "$event" = post-merge ] && [ "${2:-0}" = 1 ]; then
+    exit 0
+fi
+git_dir=$(git rev-parse --absolute-git-dir)
+mkdir -p "$git_dir/book-reading"
+status_file="$git_dir/book-reading/last-run.json"
+log_file="$git_dir/book-reading/last-run.log"
+config='不要怕/specs/reading-edition.json'
+revision=$(git rev-parse HEAD)
+if ! git cat-file -e "$revision:$config" 2>/dev/null; then
+    exit 0
+fi
+if sh "$root/.agents/skills/book-reading-edition/scripts/run.sh" \
+    --repo "$root" --config "$config" --mode merged --revision "$revision" \
+    --status-file "$status_file" >"$log_file" 2>&1; then
+    cat "$log_file"
+else
+    printf '{"status":"failed","source_revision":"%s","event":"%s"}\n' "$revision" "$event" >"$status_file"
+    printf '阅读版生成失败；Git 操作已经完成，上一份成功的阅读版仍保留。日志：%s\n' "$log_file" >&2
+    cat "$log_file" >&2
+    exit 1
+fi
