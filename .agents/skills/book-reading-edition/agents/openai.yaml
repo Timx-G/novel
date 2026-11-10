@@ -1,0 +1,6 @@
+interface:
+  display_name: "书籍阅读版排版与导出"
+  short_description: "将已有章节排成带封面、扉页、目录和页码的阅读版，并在合入后更新"
+  default_prompt: "请使用 $book-reading-edition，依据本书已选封面、目录与实际正文生成阅读版，核验完整性和逐页排版，并保留当前分支的合入约定。"
+policy:
+  allow_implicit_invocation: true

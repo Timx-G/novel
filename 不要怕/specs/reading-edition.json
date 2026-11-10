@@ -1,0 +1,13 @@
+{
+  "title": "不要怕",
+  "dedication": "写给现在与未来的自己",
+  "toc": "00-全书规划/全书目录.md",
+  "cover": "03-附件/封面/不要怕-封面-v0.3.png",
+  "page_mm": [140, 210],
+  "margin_mm": 18,
+  "body_pt": 11,
+  "fonts": {
+    "regular": {"path": "/System/Library/Fonts/Supplemental/Songti.ttc", "index": 6},
+    "bold": {"path": "/System/Library/Fonts/Supplemental/Songti.ttc", "index": 1}
+  }
+}
