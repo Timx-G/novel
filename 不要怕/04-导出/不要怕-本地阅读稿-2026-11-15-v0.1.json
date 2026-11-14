@@ -1,0 +1,61 @@
+{
+  "output": "不要怕/04-导出/不要怕-本地阅读稿-2026-11-15-v0.1.pdf",
+  "mode": "preview",
+  "source_revision": null,
+  "base_revision": "3732639b120330669ded7efb893da6c503a34d64",
+  "inputs": {
+    "不要怕/specs/reading-edition.json": "0f24aa52b63107e29d181d94004a5aef83c82592f8eccc2db61384c11022cfba",
+    "不要怕/00-全书规划/全书目录.md": "76b3eca2a5144b44e4d4455a6496a6a63fd7153a05572eba1e94676a263d5be2",
+    "不要怕/02-正文/为什么要把这些写下来.md": "6841e92743dfeda94bf5057afb4bbf8fd8f739de661123f04fdde2befe322e41",
+    "不要怕/02-正文/九江.md": "bbe57edfb8ffedd0b1137c3be1055056c85c8def92b5b3f3c72646dadaf5be0e",
+    "不要怕/02-正文/担心有一天用不上.md": "ab25000846ee9c9ef55ed2d8b8ec6876b21d4cc1b4eff0a03806429d493e08ed",
+    "不要怕/03-附件/封面/不要怕-封面-v0.3.png": "c578ab19d37c0a28aebb026ab846854afbabb3bcf83d46dc8a454bc41744cac1"
+  },
+  "renderer_sha256": "b260b8d02558442e304fd5c097cda50dafe987e766206bd84421f07ef4e5716f",
+  "pdf_sha256": "8f384ca011b077483301d566cd037a7b150cb9debd860fb1c140ff8b82cdd5b9",
+  "pages": 13,
+  "chapters": [
+    {
+      "title": "为什么要把这些写下来",
+      "path": "不要怕/02-正文/为什么要把这些写下来.md",
+      "page": 1
+    },
+    {
+      "title": "九江",
+      "path": "不要怕/02-正文/九江.md",
+      "page": 3
+    },
+    {
+      "title": "担心有一天用不上",
+      "path": "不要怕/02-正文/担心有一天用不上.md",
+      "page": 7
+    }
+  ],
+  "checks": {
+    "text_blocks_checked": 62,
+    "full_text": "passed",
+    "page_bounds": "passed",
+    "navigation": "passed"
+  },
+  "visual_review": {
+    "status": "passed",
+    "reviewed_on": "2026-11-15",
+    "pages_reviewed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "pdf_sha256": "8f384ca011b077483301d566cd037a7b150cb9debd860fb1c140ff8b82cdd5b9",
+    "notes": "已逐页查看全部 13 页渲染图；封面、目录、中文字体、段落、出处链接及连续页码正常，未见裁切、重叠或缺字。"
+  }
+}
